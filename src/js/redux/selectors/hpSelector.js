@@ -1,12 +1,12 @@
 import { createSelector } from 'reselect';
 
-const exampleDataSelector = state => state.example;
+const hpDataSelector = state => state.example;
 
 const resultSelector = createSelector(
-  exampleDataSelector,
+  hpDataSelector,
   payload => payload.get('result')
 );
 
-export const exampleSelector = state => ({
+export const dataSelector = state => ({
   result: resultSelector(state),
 });

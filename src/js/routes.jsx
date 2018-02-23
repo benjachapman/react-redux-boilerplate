@@ -1,33 +1,23 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import {
   Route,
-  Switch,
   withRouter,
 } from 'react-router-dom';
-import { Header } from './common/components/Header';
-import ExampleRouteHandler from './views/example';
+import { HPDisplay } from './common/components/HPDisplay';
+import WorkInfo from './views/workInfo';
 
-import '../assets/fonts/fonts.css';
+import Nonsense from './views/nonsense';
 
-const JustAnotherPage = () => (
-  <div>
-    <h2>This is Just Another Page</h2>
-    <p>Please remove this from your route, it is just to show case basic setup for router.</p>
-  </div>
-);
+import '../style/index.css';
 
-const HeaderWithRouter = withRouter(props => <Header {...props} />);
+const HPDisplayWithRouter = withRouter(props => <HPDisplay {...props} />);
+const WorkInfoWithRouter = withRouter(props => <WorkInfo {...props} />);
+const NonsenseWithRouter = withRouter(props => <Nonsense {...props} />);
 
 module.exports = (
-  <div className="container">
-    <HeaderWithRouter />
-    <hr />
-    <div className="container__content">
-      <Switch>
-        <Route exact path="/" component={ExampleRouteHandler} />
-        <Route path="/page" component={JustAnotherPage} />
-        <Route path="*" component={ExampleRouteHandler} />
-      </Switch>
-    </div>
-  </div>
+  <Fragment>
+    <HPDisplayWithRouter />
+    <WorkInfoWithRouter />
+    <NonsenseWithRouter />
+  </Fragment>
 );

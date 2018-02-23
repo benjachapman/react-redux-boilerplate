@@ -10,12 +10,92 @@
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico?walrus" type="image/x-icon">
+    <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background: white;
+    }
+
+    h3 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 36px;
+    }
+
+
+    h1, h2, a {
+      font-family: 'Playfair Display SC', serif;
+      line-height: 1;
+    }
+
+    .svr-placeholder {
+      position: absolute;
+      width: 800px;
+      padding: 0 20px;
+      top: 50%;
+      left: 50%;
+      margin: -190px 0 0 -400px;
+      z-index: -1;
+    }
+    .svr-placeholder .circle {
+      width: 316px;
+      height: 316px;
+      border: 3px solid red;
+      border-radius: 50%;
+      position: absolute;
+      top: 14px;
+      left: 11px;
+    }
+    .svr-placeholder .line {
+
+    }
+/*
+    .spinner {
+      width: 40px;
+      height: 40px;
+      top: 50vh;
+      left: 50vw;
+      position: absolute;
+      background-color: #f1f1f1;
+
+      border-radius: 100%;
+      -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+      animation: sk-scaleout 1.0s infinite ease-in-out;
+      z-index: -1;
+    }
+
+    @-webkit-keyframes sk-scaleout {
+      0% { -webkit-transform: scale(0) }
+      100% {
+        -webkit-transform: scale(1.0);
+        opacity: 0;
+      }
+    }
+
+    @keyframes sk-scaleout {
+      0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+      } 100% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+        opacity: 0;
+      }
+    } */
+    </style>
 </head>
 <body >
 <!--[if lt IE 7]>
 <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 <![endif]-->
 <div id="app-container">
+</div>
+<div class="svr-placeholder">
+  <div class="circle"></div>
+  <div class="line"></div>
 </div>
 </body>
 </html>

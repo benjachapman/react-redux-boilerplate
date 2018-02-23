@@ -1,0 +1,15 @@
+.homeLink {
+  position:absolute;
+  top:0;
+  right:0;
+  img {
+    width:80px
+  }
+  a {
+    transition: filter 0.2s ease-in;
+    filter: contrast(2);
+    &:hover, &:active {
+      filter: contrast(1);
+    }
+  }
+}

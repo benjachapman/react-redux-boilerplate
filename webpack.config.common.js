@@ -40,26 +40,6 @@ const COMMON_LOADERS = [
           digest: 'hex',
           name: 'assets/[hash].[ext]',
         }
-      },
-      {
-        loader: 'image-webpack-loader',
-        options: {
-          query: {
-            mozjpeg: {
-              progressive: true,
-            },
-            gifsicle: {
-              interlaced: true,
-            },
-            optipng: {
-              optimizationLevel: 7,
-            },
-            pngquant: {
-              quality: '65-90',
-              speed: 4
-            }
-          },
-        }
       }
     ],
   }, {

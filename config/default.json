@@ -20,7 +20,7 @@
   "html": [
     {
 			"name": "homepage",
-      "title": "Everything is Awesome",
+      "title": "Ben",
       "template": "_default.html",
       "filename": "index.html"
     }

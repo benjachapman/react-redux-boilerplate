@@ -14,11 +14,11 @@ export const constants = {
 // ------------------------------------
 // Actions
 // ------------------------------------
-export const getAwesomeCode = createAction(GET_EXAMPLE, () => ({}));
+export const getBespokeCode = createAction(GET_EXAMPLE, () => ({}));
 export const updateExample = createAction(UPDATE_EXAMPLE, (result : exampleType) => ({ result }));
 
 export const actions = {
-  getAwesomeCode,
+  getBespokeCode,
   updateExample,
 };
 

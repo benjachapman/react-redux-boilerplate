@@ -1,0 +1,13 @@
+.scene-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
+  &--move-off {
+    transition: top 0.6s ease-in;
+    top: 100vh;
+    z-index: 4;
+  }
+}
